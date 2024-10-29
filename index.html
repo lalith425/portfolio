@@ -1,499 +1,961 @@
+<!DOCTYPE HTML>
+<html>
 
-<!DOCTYPE html>
-<html lang="en">
 <head>
-    <link rel="stylesheet" href="style.css">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Portfolio</title>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-96989482-1"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-96989482-1');
+	</script>
+
+
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Portfolio</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="description" content="Portfolio" />
+	<meta name="keywords" content="portfolio resume" />
+	<meta name="author" content="Pavan Swaroop Lebakula" />
+
+	<!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link rel="shortcut icon" href="favicon.ico">
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Quicksand:300,400,500,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700" rel="stylesheet">
+
+	<!-- Animate.css -->
+	<link rel="stylesheet" href="css/animate.css">
+	<!-- Icomoon Icon Fonts-->
+	<link rel="stylesheet" href="css/icomoon.css">
+	<!-- Bootstrap  -->
+	<link rel="stylesheet" href="css/bootstrap.css">
+	<!-- Flexslider  -->
+	<link rel="stylesheet" href="css/flexslider.css">
+	<!-- Owl Carousel -->
+	<link rel="stylesheet" href="css/owl.carousel.min.css">
+	<link rel="stylesheet" href="css/owl.theme.default.min.css">
+	<!-- Theme style  -->
+	<link rel="stylesheet" href="css/style.css">
+	<!-- Modernizr JS -->
+	<script src="js/modernizr-2.6.2.min.js"></script>
+	<!-- FOR IE9 below -->
+	<!--[if lt IE 9]>
+	<script src="js/respond.min.js"></script>
+	<![endif]-->
+
 </head>
+
 <body>
-  <div id="loading-overlay">
-    <div class="loading-spinner"></div>
-    <p>Loading Portfolio...</p>
-  </div>
-  <nav id="desktop-nav">
-    <div class="logo">Lalith Kumar Rajendran</div>
-    <div>
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-        <li><a href="certification.html">Certification</a></li>
-      </ul>
-    </div>
-  </nav>
-  <nav id="hamburger-nav">
-    <div class="logo">Lalith Kumar Rajendran</div>
-    <div class="hamburger-menu">
-      <div class="hamburger-icon">
-        <span></span>
-        <span></span>
-        <span></span>
-      </div>
-      <div class="menu-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </div>
-    </div>
-  </nav>
-<section id="profile">
-  <div class = "section__pic-container">
-    <img class = img-circle src="./assets/lalithpic.jpg" alt = "lalith Kumar Rajendran profile"/>
+	<div id="colorlib-page">
+		<div class="container-wrap">
+			<!-- Navbar Toggle Button -->
+			<a href="#" class="js-colorlib-nav-toggle colorlib-nav-toggle" data-toggle="collapse" data-target="#navbar"
+				aria-expanded="false" aria-controls="navbar"><i></i></a>
 
-  </div>
-  <div class=" section__text">
-    <p class ="section__text__p1"> Hello, I am</p>
-    <h1 class ="title">Lalith Kumar Rajendran</h1>
-    <p class ="section__text__p2"> Fullstack Software Developer</p>
-    <div class= "btn-container">
-      <button class = "btn btn-color-2" onclick = "window.open('./assets/LalithKumar_Rajendran_Resume.pdf')">Download CV</button>
-      <button class = "btn btn-color-1" onclick = "location.href='./#contact'">Contact Info</button>
-    </div>
-    <div id = "social-container">
-      <img src = "./assets/linkedin.png" alt = "My LinkedIn Profile" class ="icon" onclick = 
-      "location.href= 'https://linkedin.com/in/lalith-kumar-rajendran-290351125'"/>
-      <img src = "./assets/github.png" alt = "My GitHub Profile" class ="icon" onclick = 
-      "location.href= 'https://github.com/lalith425'"/>
+			<!-- Left navbar -->
+			<aside id="colorlib-aside" role="complementary" class="border js-fullheight">
+				<div class="text-center">
+					<div class="author-img" style="background-image: url(images/la.jpeg);"></div>
+					<h1 id="colorlib-logo"><a href="index.html">Lalith Kumar <br> Rajendran</a></h1>
+					<span class="position"><a href="#"><b>Software Developer and DevOps Engineer</a></span>
+				</div>
+				<!-- Navbar Items -->
+				<nav id="colorlib-main-menu" role="navigation" class="navbar">
+					<div id="navbar" class="collapse">
+						<ul>
+							<li class="active"><a href="#" data-nav-section="home">Home</a></li>
+							<li><a href="#" data-nav-section="about">About</a></li>
+							<li><a href="#" data-nav-section="work">Work</a></li>
+							<li><a href="#" data-nav-section="services">What Do I Do</a></li>
+							<!-- <li><a href="#" data-nav-section="skills">Skills</a></li> -->
+							<li><a href="#" data-nav-section="education">Education</a></li>
+							<!-- <li><a href="#" data-nav-section="experience">Experience</a></li> -->
 
-    </div>
-  </div>
-</section>
-<section id="about">
-  <p class="section__text__p1">Get To Know More</p>
-  <h1 class="title">About Me</h1>
-  <div class="section-container">
-    <div class="section__pic-container">
-      <img class = img-circle
-        src="./assets/Lalithpictwo.jpg"
-        alt="Profile picture"
-        class="about-pic"
-      />
-    </div>
-    <div class="about-details-container">
-      <div class="about-containers">
-        <div class="details-container">
-          <img
-            src="./assets/experience.png"
-            alt="Experience icon"
-            class="icon"
-          />
-          <h3>Experience</h3>
-          <p>3.5 years <br />Full Stack Software Development</p>
-        </div>
-        <div class="details-container">
-          <img
-            src="./assets/education.png"
-            alt="Education icon"
-            class="icon"
-          />
-          <h3>Education</h3>
-          <p>M.Sc. Masters Degree In Information Technology<br />B.E. Bachelors Degree in E&I</p>
-        </div>
-      </div>
-      <div class="text-container">
-        <p>
-          I'm <b>Lalith Kumar Rajendran</b>, a dedicated <b>Full Stack Software Developer</b> based in Tallahassee, 
-          FL, with 3.5 years of experience and currently pursuing a 
-          Master's in Information Technology at Florida State University.
-           Proficient in a range of frameworks including 
-           <b>Spring Boot, Angular 7, Hibernate</b> and also I bring a strong command of JAVA, C, JavaScript to the table. 
-          My expertise in AWS, Kubernetes, Jenkins and Git is an added advantage. Certified <b>AWS Developer Associate</b>
-           and completed my Java certification from Oracle. Having expericence in leading a <b>cross fuctionality</b> team in agile. 
-        </p>
-      </div>
-    </div>
-  </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-  />
-</section>
+							<!-- <li><a href="blog/index.html" data-nav-section="blog">Blog</a></li> -->
+							<li><a href="#" data-nav-section="contact">Contact</a></li>
+						</ul>
+					</div>
+				</nav>
+				<!-- Navbar Footer -->
+				<div class="colorlib-footer">
+					<ul>
+						<li><a href="https://www.linkedin.com/in/lalith-kumar-rajendran-fullstack-software-developer" target="_blank" title="LinkedIn"><i
+									class="icon-social-linkedin"></i></a></li>
+						<li><a href="https://github.com/lalith425" target="_blank" title="GitHub"><i
+									class="icon-social-github"></i></a>
+						</li>
+						<li><a href="mailto:lalithlearn08@gmail.com.com" title="Email"><i class="icon-mail"></i></a>
+						</li>
+					</ul>
+				</div>
+			</aside>
 
-<section id="experience">
-  <p class="section__text__p1">Explore My</p>
-  <h1 class="title">Experience</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container">
-        <h2 class="experience-sub-title" style=" color:rgb(50, 46, 46);">Frontend Development & Project Management</h2>
-        <div class="article-container">
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>HTML</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>CSS</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>NewRelic</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>JavaScript</h3>
-              <p>Basic</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Angular 7</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Jira</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Scrum</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Agile</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-        </div>
-      </div>
-      <div class="details-container">
-        <h2 class="experience-sub-title" style="color: hsl(0, 4%, 18%)">Backend Development & Other Tools</h2>
-        <div class="article-container">
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Java</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Spring Boot & Batch</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Oracle Database</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>AWS</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Docker</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Kubernates</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
+			<div id="colorlib-main">
+				<section id="colorlib-hero" class="js-fullheight" data-section="home">
+					<div class="flexslider js-fullheight">
+						<ul class="slides">
+							<li style="background-image: url(images/background.png);">
+								<div class="overlay"></div>
+								<div class="container-fluid transparent-overlay">
+									<div class="row">
+										<div
+											class="col-md-6 col-md-offset-3 col-md-pull-3 col-sm-12 col-xs-12 js-fullheight slider-text">
+											<div class="slider-text-inner js-fullheight">
+												
+												<div class="desc">
+													<h1>Hi! <br>I'm Lalith Kumar Rajendran.</h1>
+													<h2>I am a <span class="typed-words"></span></h2>
+													<p><a href="images/file/Lalith_Kumar__Resume.pdf" target="_blank" download class="btn btn-primary btn-learn">Download CV <i class="icon-download4"></i></a></p>
+													<canvas id="canvas"></canvas>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</li>
+						</ul>
+					</div>
+				</section>
 
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Kafka</h3>
-              <p>Basic</p>
-            </div>
-          </article>
+				<section class="colorlib-about" data-section="about">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-12">
+								<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="col-md-12">
+										<div class="about-desc">
+											<span class="heading-meta">About</span>
+											<h2 class="colorlib-heading">Who Am I?</h2>
+											<p>Hey there! I’m Lalith Kumar Rajendran, a Software Engineer with a knack for turning complex challenges into seamless solutions, and yes—I actually enjoy it! With 4 years of hands-on experience, I’ve delved deep into backend development, scalable microservices, and DevOps. My journey began at Cognizant, where I played a key role in modernizing 7-Eleven’s order processing system, turning it into a high-performing and scalable, microservices-based architecture. That’s where I got my thrill for optimization—whether it was reducing server load or ensuring smooth data integration.
 
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Jenkins</h3>
-              <p>Intermediate</p>
-            </div>
-          </article>
-          <article>
-            <img
-              src="./assets/checkmark.png"
-              alt="Experience icon"
-              class="icon"
-            />
-            <div>
-              <h3>Git</h3>
-              <p>Experienced</p>
-            </div>
-          </article>
-        </div>
-      </div>
+												Then came my internship at Rivian, where I shifted gears to the world of automation and cloud infrastructure. From automating CI/CD pipelines to improving system observability with Prometheus and Grafana, I got my hands dirty in making sure everything runs like a well-oiled machine. I love digging into problems and streamlining processes so they just work kind of like those satisfying moments when all the pieces of a puzzle finally click together.
+												
 
-      
-    </div>
-  </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-  />
-</section>
-
-<section id="projects">
-  <p class="section__text__p1">Browse My Recent</p>
-  <h1 class="title">Projects</h1>
-  <div class="experience-details-container">
-    <div class="about-containers">
-      <div class="details-container color-container project-container">
-        <div class="article-container">
-          <img
-            src="./assets/smartshop.jpg"
-            alt="Project 1"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">Smart Shop</h2>
-        <h4>Online shopping Application</h4>
-        <h4>Main Tech Stack: Spring Boot, Hibernate, Sql</h4>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/lalith425/smart_shop/tree/main/smart_shop'"
-          >
-            Github
-          </button>
-  
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/tweetapp.jpg"
-            alt="Project 2"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">TweetApp</h2>
-        <h4>Twitter like social mediaapplication for messaging</h4>
-        <h4>Main Tech Stack: Angular, Spring Boot, Kafka, Sql, Docker</h4>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/lalith425/tweet-app'"
-          >
-            Github
-          </button>
-        </div>
-      </div>
-      <div class="details-container color-container">
-        <div class="article-container">
-          <img
-            src="./assets/Devops.png"
-            alt="Project 3"
-            class="project-img"
-          />
-        </div>
-        <h2 class="experience-sub-title project-title">DevOps Pipeline</h2>
-        <h4>Setting up CI/CD Pipeline</h4>
-        <h4>Main Tech Stack: Git, Maven, Docker, Kubernates, Sonarqube, AWS EC2</h4>
-        <div class="btn-container">
-          <button
-            class="btn btn-color-2 project-btn"
-            onclick="location.href='https://github.com/lalith425/Devops-Pipeline'"
-          >
-            Github
-          </button>
-        </div>
-      </div>
-    </div>
-  </div>
-  <img
-    src="./assets/arrow.png"
-    alt="Arrow icon"
-    class="icon arrow"
-    
-  />
-<section id="certification">
-  <p class="section__text__p1">Check Out My Certifications</p>
-  <title>Certifications </title>
-  <div class="certification-container">
-    <div class="card">
-        <img src="./assets/oracle.jpg" alt="Oracle Certificate">
-        <div class="container">
-            <h4><b>Oracle Java Certified</b></h4>
-            <p>Oracle</p>
-            <p>14- Nov-2017</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./assets/NIIT.png" alt="NIIT Certificate">
-        <div class="container">
-            <h4><b>NIIT Core Java</b></h4>
-            <p>NIIT INDIA</p>
-            <p>14- Nov-2017</p>
-        </div>
-    </div>
-
-    <div class="card">
-        <img src="./assets/cdac.jpg" alt="CDAC Certificate">
-        <div class="container">
-       
-          <h4><b>CDAC WorkShop</b></h4>
-            <p>CDAC INDIA</p>
-            <p>02- Jan-2018</p>
-        </div>
-    </div>
+												<h2 class="colorlib-heading">What drives me? </h2>
+												Building scalable systems that don’t just solve today’s problems but anticipate tomorrow’s. I’m always excited to take on challenges where technology can make life easier for users and businesses alike. What demotivates me? Stagnation—I'm all about continuous learning and pushing the envelope.
+												
+												I believe in teamwork, and collaboration isn’t just a buzzword for me. I thrive on it, whether it's collaborating with cross-functional teams or mentoring peers. At the end of the day, what keeps me going is knowing that I can make an impact by not just solving problems, but creating solutions that last. Let’s build something awesome together!</p>
+										</div>
+									</div>
+								</div>
 
 
-    <div class="card">
-        <img src="./assets/aws.png" alt="AWS Certificate">
-        <div class="container">
-            <h4><b>AWS Developer Associate</b></h4>
-            <p>AWS</p>
-            <p>30-OCT-2023</p>
-        </div>
-    </div>
 
-    <div class="card">
-        <img src="./assets/iiht.jpg" alt="IIHT Certificate">
-        <div class="container">
-            <h4><b>IIHT Fullstack Developer</b></h4>
-            <p>IIHT</p>
-            <p>01-Dec-2021</p>
-        </div>
-    </div>
-</div>
 
-</section>
+								<div class="ro justify-content-center">
+									<div class="col-md-6 animate-box" data-animate-effect="fadeInBottom">
+										<div class="ser color-4">
+											<img src="images/riv.png" alt="Rivian" class="card-image">
+											<h3>Software Engineer Intern : DevOps</h3>
+											<p><strong>Rivian</strong><br> Palo Alto, CA | May 2024 – August 2024</p>
+											<div class="skills-badge">
+												<span class="badge">ArgoCD</span>
+												<span class="badge">AWS EKS</span>
+												<span class="badge">AWS EC2</span>
+												<span class="badge">Prometheus</span>
+												<span class="badge">Tempo</span>
+												<span class="badge">Grafana</span>
+												<span class="badge">GitOps</span>
+												<span class="badge">Helm</span>
+												<span class="badge">CD</span>
+												<span class="badge">Kubernetes CRD</span>
+											</div>
+											<span class="dropdown-icon">▼</span>
+											<div class="det">
+												<ul>
+													<li>Developed scalable observability stack</li>
+													<li>Enhanced visibility by 80% for developers</li>
+													<li>Integrated observability with Rivian's Backend Services</li>
+													<li>Automated deployments via GitOps & Argo CD</li>
+													<li>Created custom Helm chart for deployment</li>
+													
+												</ul>
+											</div>
+										</div>
+									</div>
+								
+									<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+										<div class="ser color-1">
+											<img src="images/cognizant.jpg" alt="Cognizant" class="card-image">
+											<h3>Software Engineer</h3>
+											<p><strong>Cognizant Technology Solutions</strong><br> July 2020 – December 2022</p>
 
-</section>
-<section id="contact">
-  <h1></h1>
-  <p class="section__text__p1">Get in Touch</p>
-  <h1 class="title">Contact Me</h1>
-  <div class="contact-info-upper-container">
-    <div class="contact-info-container">
-      <img
-        src="./assets/email.png"
-        alt="Email icon"
-        class="icon contact-icon email-icon"
-      />
-      <p><a href="mailto:examplemail@gmail.com">lalithlearn08@gmail.com</a></p>
-    </div>
-    <div class="contact-info-container">
-      <img
-        src="./assets/linkedin.png"
-        alt="LinkedIn icon"
-        class="icon contact-icon"
-      />
-      <p><a href="https://linkedin.com/in/lalith-kumar-rajendran-290351125">LinkedIn</a></p>
-    </div>
-  </div>
-</section>
-<footer>
-  <nav>
-    <div class="nav-links-container">
-      <ul class="nav-links">
-        <li><a href="#about">About</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </div>
-  </nav>
-  <p>Copyright &#169; 2023 Lalith Kumar Rajendran. All Rights Reserved.</p>
-</footer>
-<script src="script.js"></script>
+											<div class="skills-badge">
+
+												<span class="badge">Leadership</span>
+												<span class="badge">Agile</span>
+												<span class="badge">Jira</span>
+												<span class="badge">Code Reviews</span>
+												<span class="badge">System Design</span>
+												<span class="badge">DBMS Optimization</span>
+												<span class="badge">Indexing</span>
+												<span class="badge">Troubleshooting</span>
+												<span class="badge">Debugging</span>
+												<span class="badge">Production Support</span>
+												<span class="badge">Alerting Framework</span>
+												
+											</div>
+
+											<span class="dropdown-icon">▼</span>
+											<div class="det">
+												<ul>
+													
+													<li>Integrated Kafka for real-time streaming</li>
+													<li>Software design and architectural improvements</li>
+													<li>Agile methodology for streamlined processes</li>
+													<li>Implemented DB indexing and query optimization</li>
+													<li>Trained juniors and led hypercare support</li>
+													<li>Handled troubleshooting and issue resolution</li>
+													<li>Conducted thorough code reviews</li>
+												
+														</ul>
+											</div>
+										</div>
+									</div>
+								
+									<div class="col-md-6 animate-box" data-animate-effect="fadeInTop">
+										<div class="ser color-3">
+											<img src="images/cognizant.jpg" alt="Junior Software Engineer" class="card-image">
+											<h3>Junior Software Engineer</h3>
+											<p><strong>Cognizant Technology Solutions</strong><br> June 2019 – June 2020</p>
+											
+											<div class="skills-badge">
+												<span class="badge">Java</span>
+												<span class="badge">Angular</span>
+												<span class="badge">DSA</span>
+												<span class="badge">Spring Boot, Spring Batch</span>
+												<span class="badge">Oracle</span>
+												<span class="badge">REST Api</span>
+												<span class="badge">JUnit, Mokito</span>
+												<span class="badge">Docker</span>
+												<span class="badge">k8 Manifest</span>
+												<span class="badge">Jenkins</span>
+												<span class="badge">Maven</span>
+											</div>
+											<span class="dropdown-icon">▼</span>
+											<div class="det">
+												<ul>
+
+													<li>Worked on migration project of 7-Eleven core systems</li>
+													<li>Focused on coding and Java frameworks</li>
+													<li>Database management and optimization</li>
+													<li>Developed unit tests and test cases</li>
+													<li>Data Structures and Algorithms (DSA) proficiency</li>
+													<li>Worked with Angular for frontend development</li>
+													<li>Shared Responsibility: Devops- Managed Docker, Kubernetes manifests, and CI/CD pipelines</li>
+											
+													</ul>
+											</div>
+										</div>
+									</div>
+
+
+									<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+										<div class="ser color-2">
+											<img src="images/fsu.png" alt="FSU IT Services" class="card-image">
+											<h3>IT Services</h3>
+											<p><strong>FSU IT Services at University Housing</strong><br> August 2022 – Present</p>
+											<div class="skills-badge">
+												<span class="badge">Database Management</span>
+												<span class="badge">UI/UX Enhancement</span>
+												<span class="badge">Technical Support</span>
+												<span class="badge">Troubleshooting</span>
+												<span class="badge">Resource Optimization</span>
+												<span class="badge">IT Infrastructure</span>
+											</div>
+											<span class="dropdown-icon">▼</span>
+											<div class="det">
+												<ul>
+													<li>Managed student databases for housing</li>
+													<li>Enhanced UI for university housing portal</li>
+													<li>Provided comprehensive IT support</li>
+													<li>Optimized IT resources for efficiency</li>
+													<li>Troubleshot and resolved technical issues</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+									
+								
+
+								
+
+								
+
+
+								<!-- <div class="row">
+									<div class="col-md-4 animate-box" data-animate-effect="fadeInBottom">
+										<div class="services color-4">
+											<span class="icon2"><i class="icon-book"></i></span>
+											<h3>Software Engineer Intern : DevOps</h3>
+											<p>Rivian<br> Palo Alto, CA | May 2024 – August 2024</p>
+											<div class="details">
+												<ul>
+													<li>Worked on Dockerization and Linux-based deployment.</li>
+													<li>Assisted with hypercare for real-time monitoring.</li>
+													<li>Collaborated on CI/CD pipeline improvements.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="col-md-4 animate-box" data-animate-effect="fadeInRight">
+										<div class="services color-1">
+											<span class="icon2"><i class="icon-code"></i></span>
+											<h3>Software Engineer</h3>
+											<p>Cognizant Technology Solutions <br> July 2020 – December 2022</p>
+										</div>
+									</div>
+									<div class="col-md-4 animate-box" data-animate-effect="fadeInTop">
+										<div class="services color-3">
+											<span class="icon2"><i class="icon-device-laptop"></i></span>
+											<h3>Junior Software Engineer</h3>
+											<p>Cognizant Technology Solutions<br> June 2019 – June 2020</p>
+										</div>
+									</div>
+									
+								</div> -->
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="colorlib-work" data-section="work">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">My Work</span>
+								<h2 class="colorlib-heading animate-box">projects.</h2>
+							</div>
+						</div>
+						<div class="row row-bottom-padded-sm animate-box" data-animate-effect="fadeInLeft">
+							<div class="col-md-12">
+								<p class="work-menu"><span>
+									<!-- <a href="https://docs.google.com/document/d/1lJH9nU8XLG6Oy8iU6f2EV0PaA6UqWCXtGyShO1CDwHQ/edit?usp=sharing"
+															target="_blank" class="btn btn-primary btn-learn">View
+															CV <i class="fas fa-download"></i></a></p>								 -->
+							</div>
+						</div>
+						<div class="row">
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="tweetapp">
+								<div class="project"
+									style="background-image: url(images/projects/twitter.png);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>TweetApp</a></h3>
+											<h4><a>Skills:  Angular, Microservices, Load Balancer, API Gateway, Spring Boot, Docker, SQL.</a></h4>
+											<span>Designed and implemented a Full Stack Tweet Application using microservices architecture and cloud services, developing backend logic for posting real-time tweets as part of deepening the understanding of distributed systems architecture.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="projectCICD">
+								<div class="project"
+									style="background-image: url(images/projects/cicd.png);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Cloud-native CI/CD Pipeline
+											</a></h3>
+											<h4><a>Skills:  Git, Jenkins, SonarQube, Docker, Maven, Kubernetes.</a></h4>
+											<span>Developed an end-to-end CI/CD pipeline with continuous deployment and integration, gaining deeper insights into DevOps practices and continuous delivery workflows.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="helm">
+								<div class="project"
+									style="background-image: url(images/projects/hk.png);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Observability Setup - Custom Helm Chart</a></h3>
+											<h4><a>Skills: Helm, Kubernetes, Prometheus, Grafana, Tempo, Loki.</a></h4>
+											<span>Created a custom Helm chart enabling one-click deployment of the entire observability stack, streamlining the setup process for Prometheus, Grafana, Tempo, and Loki, reducing setup time significantly.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="smartShop">
+								<div class="project"
+									style="background-image: url(images/projects/smshop.jpg);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Full Stack Application Smart Shop</a></h3>
+											<h4><a>Skills: Kubernetes, Minikube, Docker, eact, Java, JWT, REST APIs, MySQL.</a></h4>
+											<span>Designed and implemented a Full Stack Smart Shop application with a React frontend and Java backend, secured using JWT tokens for user authentication. Integrated REST APIs for seamless interaction between the front and backend.</span>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="projectAWS">
+								<div class="project"
+									style="background-image: url(images/projects/aws.png);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Observability Setup - Custom Helm Chart</a></h3>
+											<h4><a>Skills: RDS, Elastic Beanstalk, EC2, S3, MySQL, Spring Boot, Angular</a></h4>
+											<span>Deployed MySQL on AWS RDS linked with a Spring Boot app, streamlined via AWS Elastic Beanstalk. Hosted the
+												frontend on an S3 bucket, enabling a dynamic web interface.</span>
+										</div>
+									</div>
+								</div>
+							</div> -->
+
+
+							<!-- <div class="col-md-6 animate-box" data-animate-effect="fadeInLeft" id="projectAWS">
+								<div class="project"
+									style="background-image: url(images/projects/aws.png);">
+									<div class="desc">
+										<div class="con">
+											<h3><a>Scalable Cloud-based Full Stack Deployment</a></h3>
+											<h4><a>Skills: RDS, Elastic Beanstalk, EC2, S3, MySQL, Spring Boot, Angular</a></h4>
+											<span>Deployed MySQL on AWS RDS linked with a Spring Boot app, streamlined via AWS Elastic Beanstalk. Hosted the
+												frontend on an S3 bucket, enabling a dynamic web interface.</span>
+										</div>
+									</div>
+								</div>
+							</div> -->
+
+						</div>
+						
+					</div>
+				</section>
+
+				<section class="colorlib-services" data-section="services">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">What I do?</span>
+								<h2 class="colorlib-heading">Problems I like solving.</h2>
+							</div>
+						</div>
+						<div class="row row-pt-md">
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-1">
+									<span class="icon">
+										<i class="icon-code-outline"></i>
+									</span>
+									<div class="desc">
+										<h3>Software Engineering</h3>
+										<p>Crafting efficient, scalable solutions across the stack with a focus on seamless, responsive web development.
+
+										</p>
+									</div>
+								</div>
+							</div>
+							<!-- <div class="col-md-4 text-center animate-box">
+								<div class="services color-2">
+									<span class="icon">
+										<i class="icon-data"></i>
+									</span>
+									<div class="desc">
+										<h3>Infrastructure Planning</h3>
+										<p>Platform planning, from failover, redundancy, high availability, and extreme TPS environments</p>
+									</div>
+								</div>
+							</div> -->
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-3">
+									<span class="icon">
+										<i class="icon-layers2"></i>
+									</span>
+									<div class="desc">
+										<h3>Microservices Architecture</h3>
+										<p>Architected REST-based microservices to drive system performance and enable seamless scalability.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-9">
+									<span class="icon">
+										<i class="icon-cog2"></i>
+									</span>
+									<div class="desc">
+										<h3>Messaging Tech</h3>
+										<p>Expert in leveraging Apache Kafka to process high volumes of event streams reliably.
+										</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-4">
+									<span class="icon">
+										<i class="icon-upload"></i>
+									</span>
+									<div class="desc">
+										<h3>Improving Deployment Efficiency</h3>
+										<p>Optimized deployment processes with Jenkins CI/CD pipelines integrated with SonarQube and Groovy scripts.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-5">
+									<span class="icon">
+										<i class="icon-flow-merge"></i>
+									</span>
+									<div class="desc">
+										<h3>Containerization (Docker & K8S)</h3>
+										<p>Proficient in deploying and managing containerized applications using Docker and Kubernetes (K8S) for high availability.</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-4 text-center animate-box">
+								<div class="services color-6">
+									<span class="icon">
+										<i class="icon-cloud4"></i>
+									</span>
+									<div class="desc">
+										<h3>Cloud Services</h3>
+										<p>AWS Certified; built scalable applications using Lambda, S3, API Gateway, and DynamoDB to streamline workflows.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-user"></i>
+								</span>
+								<div class="desc">
+									<h3>Cross-functional Team Leadership</h3>
+									<p>Led cross-functional teams to successful product launches while fostering collaboration and knowledge sharing.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-user"></i>
+								</span>
+								<div class="desc">
+									<h3>Agile Development</h3>
+									<p>Practiced Agile methodologies, actively contributing to sprint planning, grooming sessions, and continuous feedback loops to improve delivery speed and product quality.</p>
+								</div>
+							</div>
+						</div>
+
+						<div class="col-md-4 text-center animate-box">
+							<div class="services color-6">
+								<span class="icon">
+									<i class="icon-user"></i>
+								</span>
+								<div class="desc">
+									<h3>Leadership</h3>
+									<p>Led Juniors as a team for Hypercare Support to successful product launches while fostering collaboration, clear communication, and knowledge sharing.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<div id="colorlib-counter" class="colorlib-counters"
+					style="background-image: url(images/cover_bg1.png);" data-stellar-background-ratio="0.5">
+					<div class="overlay"></div>
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="15" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Projects</span>
+							</div>
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="150" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Java, DevOps & Javascript requirements worked</span>
+							</div>
+							<div class="col-md-3 text-center animate-box">
+								<span class="colorlib-counter js-counter" data-from="0" data-to="10000" data-speed="5000"
+									data-refresh-interval="50"></span>
+								<span class="colorlib-counter-label">Bugs Resolved</span>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- <section class="colorlib-skills" data-section="skills">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">My Specialty</span>
+								<h2 class="colorlib-heading animate-box">Let's get specific</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>AngularJs & Angular2</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>AWS</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Databases (SQL & NoSQL)</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="75"
+											aria-valuemin="0" aria-valuemax="100" style="width:75%">
+											<span>75%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Containerization</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>GraphQL</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>GCP (Google Cloud Platform)</h3>
+									<div class="progress">
+										<div class="progress-bar color-3" role="progressbar" aria-valuenow="70"
+											aria-valuemin="0" aria-valuemax="100" style="width:70%">
+											<span>70%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInRight">
+								<div class="progress-wrap">
+									<h3>Java</h3>
+									<div class="progress">
+										<div class="progress-bar color-5" role="progressbar" aria-valuenow="90"
+											aria-valuemin="0" aria-valuemax="100" style="width:90%">
+											<span>90%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-6 animate-box" data-animate-effect="fadeInLeft">
+								<div class="progress-wrap">
+									<h3>JavaScript/ES6/Typescript</h3>
+									<div class="progress">
+										<div class="progress-bar color-1" role="progressbar" aria-valuenow="80"
+											aria-valuemin="0" aria-valuemax="100" style="width:80%">
+											<span>80%</span>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section> -->
+
+				<section class="colorlib-education" data-section="education">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box"
+								data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Education</span>
+								<h2 class="colorlib-heading animate-box">Education</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-12 animate-box" data-animate-effect="fadeInLeft">
+								<div class="fancy-collapse-panel">
+									<div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingOne">
+												<h4 class="panel-title">
+													<a data-toggle="collapse" data-parent="#accordion"
+														href="#collapseOne" aria-expanded="true"
+														aria-controls="collapseOne">Master of Science
+													</a>
+												</h4>
+											</div>
+											<div id="collapseOne" class="panel-collapse collapse in" role="tabpanel"
+												aria-labelledby="headingOne">
+												<div class="panel-body">
+													<div class="row">
+														<div class="colorlib-feature edu-feature colorlib-feature-sm">
+															<div class="colorlib-icon">
+																<img src="images/fsu.png" class="img-responsive"
+																	alt="Western University">
+															</div>
+															<div class="colorlib-text edu-feature__desc">
+																<a target="_blank"><b>Florida State University</b></a>
+																<span class="heading-meta">January 2023 - December 2024</span>
+																<b>Master of Science in Information Technology</b>
+																<!-- <ul>
+																	<li>
+																		Major in Computer Science
+																	</li>
+																</ul> -->
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="panel panel-default">
+											<div class="panel-heading" role="tab" id="headingTwo">
+												<h4 class="panel-title">
+													<a class="collapsed" data-toggle="collapse" data-parent="#accordion"
+														href="#collapseTwo" aria-expanded="true"
+														aria-controls="collapseTwo">Bachelor Of Engineering
+													</a>
+												</h4>
+											</div>
+											<div id="collapseTwo" class="panel-collapse collapse" role="tabpanel"
+												aria-labelledby="headingTwo">
+												<div class="panel-body">
+													<div class="row">
+														<div class="colorlib-feature edu-feature colorlib-feature-sm">
+															<div class="colorlib-icon">
+																<img src="images/Anna.png" class="img-responsive"
+																	alt="Western University">
+															</div>
+															<div class="colorlib-text edu-feature__desc">
+																<a target="_blank"><b>Anna University</b></a>
+																<span class="heading-meta">July 2015 – May 2019</span>
+																<b>Bachelor in Electronics and Instrumentation Engineering</b>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="colorlib-contact" data-section="contact" style="padding-bottom: 20em;">
+					<div class="colorlib-narrow-content">
+						<div class="row">
+							<div class="col-md-6 col-md-offset-3 col-md-pull-3 animate-box" data-animate-effect="fadeInLeft">
+								<span class="heading-meta">Get in Touch</span>
+								<h2 class="colorlib-heading">Contact</h2>
+							</div>
+						</div>
+						<div class="row">
+							<div class="col-md-5" style="display: flex;">
+								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="colorlib-icon">
+										<a href="mailto:lalithlearn08@gmail.com" target="blank"><i class="icon-mail"></i></a>
+									</div>
+									<div class="colorlib-text">
+										<p></p>
+									</div>
+								</div>
+
+								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="colorlib-icon">
+										<a href="https://github.com/lalith425" target="blank"><i class="icon-github"></i></a>
+									</div>
+									<div class="colorlib-text">
+										<p> </p>
+									</div>
+								</div>
+
+								<div class="colorlib-feature colorlib-feature-sm animate-box" data-animate-effect="fadeInLeft">
+									<div class="colorlib-icon">
+										<a href="https://www.linkedin.com/in/lalith-kumar-rajendran-fullstack-software-developer" target="blank"><i class="icon-linkedin2"></i></a>
+									</div>
+								</div>
+								<br>
+								<br>
+								<br>
+								<br>
+							</div>
+					
+						</div>
+					</div>
+				</section>
+
+			</div><!-- end:colorlib-main -->
+		</div><!-- end:container-wrap -->
+	</div><!-- end:colorlib-page -->
+
+	<!-- jQuery -->
+	<script src="js/jquery.min.js"></script>
+	<!-- jQuery Easing -->
+	<script src="js/jquery.easing.1.3.js"></script>
+	<!-- Bootstrap -->
+	<script src="js/bootstrap.min.js"></script>
+	<!-- Waypoints -->
+	<script src="js/jquery.waypoints.min.js"></script>
+	<!-- Flexslider -->
+	<script src="js/jquery.flexslider-min.js"></script>
+	<!-- Owl carousel -->
+	<script src="js/owl.carousel.min.js"></script>
+	<!-- Counters -->
+	<script src="js/jquery.countTo.js"></script>
+
+
+	<!-- MAIN JS -->
+	<script src="js/main.js"></script>
+	<script src="js/typed.js"></script>
+            <script>
+            var typed = new Typed('.typed-words', {
+            strings: ["Software Developer", "DevOps Engineer", "Full Stack Web Application Developer", "MSIT Student","Continuous Learner"],
+            typeSpeed: 80,
+            backSpeed: 80,
+            backDelay: 1000,
+            startDelay: 1000,
+            loop: true,
+            showCursor: true
+            });
+
+
+			let resizeReset = function() {
+				w = canvasBody.width = window.innerWidth;
+				h = canvasBody.height = window.innerHeight;
+			}
+
+			const opts = { 
+				particleColor: "rgb(44,152,240)",
+				lineColor: "rgb(44,152,240)",
+				particleAmount: 20,
+				defaultSpeed: 0.8,
+				variantSpeed: 1,
+				defaultRadius: 2,
+				variantRadius: 2,
+				linkRadius: 200,
+			};
+
+			window.addEventListener("resize", function(){
+				deBouncer();
+			});
+
+			let deBouncer = function() {
+				clearTimeout(tid);
+				tid = setTimeout(function() {
+					resizeReset();
+				}, delay);
+			};
+
+			let checkDistance = function(x1, y1, x2, y2){ 
+				return Math.sqrt(Math.pow(x2 - x1, 2) + Math.pow(y2 - y1, 2));
+			};
+
+			let linkPoints = function(point1, hubs){ 
+				for (let i = 0; i < hubs.length; i++) {
+					let distance = checkDistance(point1.x, point1.y, hubs[i].x, hubs[i].y);
+					let opacity = 1 - distance / opts.linkRadius;
+					if (opacity > 0) { 
+						drawArea.lineWidth = 0.5;
+						drawArea.strokeStyle = `rgba(${rgb[0]}, ${rgb[1]}, ${rgb[2]}, ${opacity})`;
+						drawArea.beginPath();
+						drawArea.moveTo(point1.x, point1.y);
+						drawArea.lineTo(hubs[i].x, hubs[i].y);
+						drawArea.closePath();
+						drawArea.stroke();
+					}
+				}
+			}
+
+			Particle = function(xPos, yPos){ 
+				this.x = Math.random() * w; 
+				this.y = Math.random() * h;
+				this.speed = opts.defaultSpeed + Math.random() * opts.variantSpeed; 
+				this.directionAngle = Math.floor(Math.random() * 360); 
+				this.color = opts.particleColor;
+				this.radius = opts.defaultRadius + Math.random() * opts. variantRadius; 
+				this.vector = {
+					x: Math.cos(this.directionAngle) * this.speed,
+					y: Math.sin(this.directionAngle) * this.speed
+				};
+				this.update = function(){ 
+					this.border(); 
+					this.x += this.vector.x; 
+					this.y += this.vector.y; 
+				};
+				this.border = function(){ 
+					if (this.x >= w || this.x <= 0) { 
+						this.vector.x *= -1;
+					}
+					if (this.y >= h || this.y <= 0) {
+						this.vector.y *= -1;
+					}
+					if (this.x > w) this.x = w;
+					if (this.y > h) this.y = h;
+					if (this.x < 0) this.x = 0;
+					if (this.y < 0) this.y = 0;	
+				};
+				this.draw = function(){ 
+					drawArea.beginPath();
+					drawArea.arc(this.x, this.y, this.radius, 0, Math.PI*2);
+					drawArea.closePath();
+					drawArea.fillStyle = this.color;
+					drawArea.fill();
+				};
+			};
+
+			function setup(){ 
+				particles = [];
+				resizeReset();
+				for (let i = 0; i < opts.particleAmount; i++){
+					particles.push( new Particle() );
+				}
+				window.requestAnimationFrame(loop);
+			}
+
+			function loop(){ 
+				window.requestAnimationFrame(loop);
+				drawArea.clearRect(0,0,w,h);
+				for (let i = 0; i < particles.length; i++){
+					particles[i].update();
+					particles[i].draw();
+				}
+				for (let i = 0; i < particles.length; i++){
+					linkPoints(particles[i], particles);
+				}
+			}
+
+			const canvasBody = document.getElementById("canvas"),
+			drawArea = canvasBody.getContext("2d");
+			let delay = 200, tid,
+			rgb = opts.lineColor.match(/\d+/g);
+			resizeReset();
+			setup();
+            </script>
 </body>
+
 </html>
